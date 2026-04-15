@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nexus Data Consulting | Decisões Inteligentes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="container">
+            <div class="logo">
+                <h1>Nexus<span>Data</span></h1>
+            </div>
+            
+            <button class="mobile-menu-btn" aria-label="Abrir menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </button>
+
+            <nav class="nav-menu">
+                <ul>
+                    <li><a href="#hero">Início</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#contact">Contato</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section id="hero" class="hero-section">
+            <div class="container hero-content">
+                <div class="hero-text">
+                    <h2>Transforme dados brutos em lucro real.</h2>
+                    <p>Especialistas em consultoria SQL, dashboards em Power BI e otimização de processos ETL para o seu negócio.</p>
+                    <a href="#contact" class="btn-primary">Solicitar Diagnóstico</a>
+                </div>
+                <div class="hero-image">
+                    <div class="placeholder-image">
+                        <p>Imagem / Dashboard 3D</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="services" class="services-section">
+            <div class="container">
+                <div class="section-title">
+                    <h3>O que fazemos</h3>
+                </div>
+                <div class="services-grid">
+                    <article class="service-card">
+                        <h4>Arquitetura SQL</h4>
+                        <p>Modelagem de bancos de dados robustos e seguros para escalabilidade.</p>
+                    </article>
+                    <article class="service-card">
+                        <h4>Business Intelligence</h4>
+                        <p>Dashboards dinâmicos que contam a história dos seus dados.</p>
+                    </article>
+                    <article class="service-card">
+                        <h4>Automação ETL</h4>
+                        <p>Integração de dados eficiente de múltiplas fontes em um só local.</p>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="contact-wrapper">
+                    <div class="contact-info">
+                        <h3>Pronto para o próximo nível?</h3>
+                        <p>Preencha o formulário e a nossa equipe de consultores entrará em contato em menos de 24 horas.</p>
+                    </div>
+                    <form action="processa.php" method="POST" class="contact-form">
+                        <div class="form-group">
+                            <label for="nome">Nome Completo</label>
+                            <input type="text" id="nome" name="nome" required placeholder="Ex: Filipe Silva">
+                        </div>
+                        <div class="form-group">
+                            <label for="email">E-mail Corporativo</label>
+                            <input type="email" id="email" name="email" required placeholder="seu@email.com">
+                        </div>
+                        <div class="form-group">
+                            <label for="servico">Serviço de Interesse</label>
+                            <select id="servico" name="servico">
+                                <option value="bi">Power BI / Dashboards</option>
+                                <option value="sql">Consultoria SQL</option>
+                                <option value="etl">Automação de Dados</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="mensagem">Mensagem</label>
+                            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Como podemos ajudar?"></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Enviar Pedido</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2026 Nexus Data Consulting. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
