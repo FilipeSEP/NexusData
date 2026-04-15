@@ -126,11 +126,12 @@ nav ul li a:hover {
 }
 
 .placeholder-image {
-  background-color: #0a192f;
+  background-color: rgba(10, 25, 47, 0.5);
   border: 1px dashed #64ffda;
   border-radius: 8px;
   height: 400px;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   color: #8892b0;
@@ -164,6 +165,7 @@ nav ul li a:hover {
   border-radius: 8px;
   border: 1px solid rgba(100, 255, 218, 0.1);
   transition: transform 0.3s ease;
+  text-align: center;
 }
 
 .service-card:hover {
@@ -171,8 +173,16 @@ nav ul li a:hover {
   border-color: #64ffda;
 }
 
-.service-card h4 {
+/* Estilo para os Ícones do Font Awesome */
+.service-icon {
+  font-size: 3rem;
   color: #64ffda;
+  margin-bottom: 20px;
+  display: block;
+}
+
+.service-card h4 {
+  color: #ccd6f6;
   font-size: 1.5rem;
   margin-bottom: 15px;
 }
@@ -233,6 +243,12 @@ nav ul li a:hover {
   color: #ccd6f6;
 }
 
+
+.form-group option {
+  background-color: #0a192f;
+  color: #ccd6f6; 
+}
+
 .form-group input:focus, 
 .form-group select:focus, 
 .form-group textarea:focus {
@@ -285,6 +301,24 @@ nav ul li a:hover {
 }
 
 @media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block;
+  }
+
+  .nav-menu {
+    position: fixed;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background-color: #0a192f;
+    transition: left 0.3s ease;
+  }
+
+  .nav-menu.active {
+    left: 0;
+  }
+
   .hero-section .hero-content,
   .contact-wrapper {
     grid-template-columns: 1fr;
@@ -295,44 +329,7 @@ nav ul li a:hover {
   .hero-text h2 {
     font-size: 2.5rem;
   }
-
-  .mobile-menu-btn {
-    display: block;
-  }
-
-  .nav-menu {
-    position: fixed;
-    left: -100%;
-    top: 80px;
-    flex-direction: column;
-    background-color: #0a192f;
-    width: 100%;
-    text-align: center;
-    transition: 0.3s ease;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
-  }
-
-  .nav-menu ul {
-    flex-direction: column;
-    padding: 2rem 0;
-  }
-
-  .nav-menu ul li {
-    margin: 1.5rem 0;
-  }
-
-  .nav-menu.active {
-    left: 0;
-  }
-
-  /* Animação do botão X */
-  .mobile-menu-btn.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-  .mobile-menu-btn.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-  .mobile-menu-btn.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
-  }
+    .services-grid {
+        grid-template-columns: 1fr;
+    }
 }
