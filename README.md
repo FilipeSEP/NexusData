@@ -10,7 +10,7 @@
 
 ## 📋 Sobre o Projeto
 
-O **Nexus Data Intelligence** é uma solução **Full-Stack** desenvolvida para o **Desafio Elos**. O projeto consiste em uma plataforma institucional dinâmica para uma empresa simulada de consultoria de dados, integrando uma interface rica e responsiva a um sistema robusto de processamento e persistência de informações no Back-End.
+O **Nexus Data Intelligence** é uma solução **Full-Stack** desenvolvida para prestar serviços a pessoas e empresas interessadas em processamneto de dados. O projeto consiste em uma plataforma institucional dinâmica para uma empresa simulada de consultoria de dados, integrando uma interface rica e responsiva a um sistema robusto de processamento e persistência de informações no Back-End.
 
 O grande diferencial técnico deste projeto é que a captação de potenciais clientes (*leads*) através do formulário não é apenas visual: os dados são processados ativamente via servidor e armazenados de forma estruturada em um banco de dados relacional.
 
